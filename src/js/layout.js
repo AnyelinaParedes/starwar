@@ -2,14 +2,18 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-import { Home } from "./views/home";
-import { Demo } from "./views/demo";
-import { Single } from "./views/single";
-import injectContext from "./store/appContext";
+import { HomeCharacters } from "./views/home";
+import { Planetas } from "./views/planetas";
+import { Vehilces} from "./views/vehilces";
+import { DetalleCharacters } from "./views/detallecharacters";
+import { DetallePlaneta } from "./views/detalleplaneta";
+import { DetalleVehicles } from "./views/detallevehicles";
 
+import injectContext from "./store/appContext";
+import NotFound from "./views/NotFound";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
-
+import Vehicles from "./component/Vehicles";
 //create your first component
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -23,16 +27,25 @@ const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/">
-							<Home />
+							<HomeCharacters />
 						</Route>
-						<Route exact path="/demo">
-							<Demo />
+						<Route exact path="/planetas">
+							<Planetas />
 						</Route>
-						<Route exact path="/single/:theid">
-							<Single />
+						<Route exact path="/vehicles">
+							<Vehicles />
+						</Route>
+						<Route exact path="/detallecharacters/:id">
+							<DetalleCharacters />
+						</Route>
+						<Route exact path="/detalleplaneta/:id">
+							<DetallePlaneta />
+						</Route>
+						<Route exact path="/detallevehicles/:id">
+							<DetalleVehicles  />
 						</Route>
 						<Route>
-							<h1>Not found!</h1>
+							<NotFound />
 						</Route>
 					</Switch>
 					<Footer />

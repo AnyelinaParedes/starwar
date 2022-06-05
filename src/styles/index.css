@@ -1,3 +1,54 @@
-/* 
-    General Styles
-*/
+
+
+body{
+    background-color: black;
+    background-image: url(https://cdn.pixabay.com/photo/2015/09/29/15/12/stars-964022_960_720.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.card:hover{
+    box-shadow: 5px 10px 20px 1px white;
+    transition: all 0.7s linear;
+}
+.footer{
+    width: 100%;
+    margin: auto 0;
+    letter-spacing: 0.2px;
+    background-color: #0a0a0a;
+    background-image: url(https://static-mh.content.disney.io/starwars/assets/footer/vader_2-86e8fdb4e26d.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+p{
+  
+    color: rgb(229, 229, 238);
+}
+.social-links{
+    text-align: center;
+    margin-top: 10px;
+    justify-content: center;
+    font-size: 30px;
+    border-spacing: 100px;
+    display: inline-flex;
+   
+
+}
+
+
+.facebook{
+   color: rgb(236, 236, 245);
+   margin-right: 10px;
+}
+.instagram{
+    color: rgb(236, 236, 245);
+    margin-right: 10px;
+}
+
+.twitter{
+    color: rgb(236, 236, 245);
+    margin-right: 10px;
+}
+.youtube{
+    color: rgb(236, 236, 245);;
+}
