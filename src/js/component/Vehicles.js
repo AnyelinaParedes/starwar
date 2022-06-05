@@ -18,7 +18,7 @@ const Vehicles = () => {
                   key={result.uid}
                 >
                   <img
-                    src="https://www.denofgeek.com/wp-content/uploads/2016/01/millennium-falcon.jpg"
+                    src="https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/480/public/media/image/2015/12/492533-halcon-milenario.jpg?itok=w980sfit"
                     className="card-img-top"
                     alt="..."
                   />

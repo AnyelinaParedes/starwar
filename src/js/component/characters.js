@@ -18,7 +18,7 @@ const Characters = () => {
                       key={index}
                     >
                       <img
-                        src="https://i0.wp.com/hipertextual.com/wp-content/uploads/2021/01/The-Mandalorian-portada-scaled.jpeg?resize=1536%2C864&quality=50&strip=all&ssl=1"
+                        src="https://rosarionuestro.com/wp-content/uploads/2019/12/baby-yoda.jpg"
                         className="card-img-top"
                         alt="..."
                       />
